@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="tial">#00574B</color>
+    <color name="verdeApolo">#85C229</color>
+    <!--    <color name="verdeApoloCabecera">#00574B</color>-->
+    <color name="verdeApoloCabecera">#CC85C229</color>
+    <color name="fondoOscuro">#08080C</color>
+    <color name="textoClaro">#CCCCCC</color>
+    <color name="textoClaroHint">#242424</color>
+    <color name="textoHint">#242424</color>
+    <color name="fondoCabecera">#0F3502</color>
+    <color name="fondoFooter">#6B0000</color>
+    <color name="verdeOscuro">#193700</color>
+    <color name="azulMarino">#00055C</color>
+<!--    <color name="verdeCabecera">#55009900"</color>-->
+    <color name="quantum_deeporange900">#CD6B00</color>
+    <color name="grisTab">#757575</color>
+    <color name="verdeTab">#116600</color>
+    <color name="etDeshabilitado">#B8B8B8</color>
+
+
+    <color name="g0">#838383</color>
+    <color name="g1">#C27DFF</color>
+    <color name="g2">#3F51B5</color>
+    <color name="g3">#4CAF50</color>
+    <color name="g4">#70B5FF</color>
+    <color name="g5">#41FFA6</color>
+    <color name="g6">#B65500</color>
+    <color name="g7">#517E1F</color>
+    <color name="g8">#1F8D9C</color>
+    <color name="g9">#1F2265</color>
+
+</resources>

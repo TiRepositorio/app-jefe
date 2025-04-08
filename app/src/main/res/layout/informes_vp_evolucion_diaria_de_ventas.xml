@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/contMenu"
+    android:fitsSystemWindows="true"
+    tools:context=".informes.EvolucionDiariaDeVentas">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/barra_vendedores"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/verdeApoloCabecera">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Vendedor"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="Ped.Ayer 2"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="Ped.Ayer"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv5"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="Tot. Pedido"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv6"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="Tot. Facturado"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv7"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="Meta"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv8"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="%Mes"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv9"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="%Proy."
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv10"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="%Reb."
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv11"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="%Dev."
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv12"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="Total Cli."
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv13"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="Cli. c/ Venta"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv14"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="Cobertura"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv15"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="Ef. Visita"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv16"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="Días Trab"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv17"
+                        style="@style/cabeceraTabla"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="IPDV"
+                        tools:ignore="HardcodedText" />
+
+                </TableRow>
+
+                <ListView
+                    android:id="@+id/lvEvolucionDiariaDeVentas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/barraMenu"
+        android:background="#ffffff"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        app:elevation="20dp"
+        app:headerLayout="@layout/menu_supervisores"
+        app:menu="@menu/drawer_menu_vendedores"
+        >
+
+
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

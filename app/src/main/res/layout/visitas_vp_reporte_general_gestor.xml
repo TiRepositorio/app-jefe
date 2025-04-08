@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,TextFields,RtlSymmetry,ContentDescription,Autofill,RtlHardcoded,UselessParent,LabelFor" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/fondoOscuro">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="REPORTE FINAL DEL GESTOR"
+                style="@style/textoCuadriculaOscura"/>
+
+            <Button
+                android:id="@+id/btn_volver"
+                android:layout_width="40sp"
+                android:layout_height="30sp"
+                android:background="@color/fondoFooter"
+                android:textColor="@color/textoClaro"
+                android:text="X" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="VENDEDOR: "
+                style="@style/textoCuadriculaOscura"/>
+
+            <TextView
+                android:id="@+id/tvDescVendedor"
+                style="@style/textoCuadriculaOscura"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="" />
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginTop="2dip"
+            android:layout_weight="1"
+            android:clipToPadding="true"
+            android:overScrollMode="never" >
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="ANALISIS DEL GESTOR"
+                    style="@style/textoCuadriculaOscura" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/d2"
+                        android:layout_width="220sp"
+                        android:layout_height="fill_parent"
+                        android:gravity="left|center_vertical"
+                        android:maxLines="1"
+                        android:scrollbars="horizontal"
+                        android:text="Analisis"
+                        style="@style/cabeceraSubTabla"/>
+
+                    <TextView
+                        android:layout_width="50sp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:paddingLeft="2sp"
+                        android:paddingRight="2sp"
+                        android:text="SI"
+                        style="@style/cabeceraSubTabla"/>
+
+                    <TextView
+                        android:layout_width="50sp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:paddingLeft="2sp"
+                        android:paddingRight="2sp"
+                        android:text="SI"
+                        style="@style/cabeceraSubTabla" />
+
+
+                    <TextView
+                        android:layout_width="60sp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:paddingLeft="2sp"
+                        android:paddingRight="2sp"
+                        android:text="SI"
+                        style="@style/cabeceraSubTabla" />
+
+
+                </TableRow>
+
+                <ListView
+                    android:id="@+id/lvdet_analisis_gestor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:scrollbars="none" />
+            </TableLayout>
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Comentario"
+            style="@style/cabeceraSubTabla"/>
+
+        <EditText
+            android:id="@+id/etComentario"
+            android:layout_width="fill_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/textoClaro"
+            android:layout_height="120sp"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/bottom_bar"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/verdeOscuro"
+                android:textColor="@color/textoClaro"
+                android:onClick="enviarReporte"
+                android:text="Enviar Reporte" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

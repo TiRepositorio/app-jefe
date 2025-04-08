@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/gerVisitaCliente"
+            android:icon="@drawable/ic_persona"
+            android:title="Visita Cliente"/>
+        <item
+            android:id="@+id/gerInformesSupervisor"
+            android:icon="@drawable/ic_graficos"
+            android:title="Informes de supervisor"/>
+<!--        <item-->
+<!--            android:id="@+id/gerInformesVendedor"-->
+<!--            android:icon="@drawable/ic_graficos"-->
+<!--            android:title="Informes de vendedor"/>-->
+        <item
+            android:id="@+id/gerInformesGeneral"
+            android:icon="@drawable/ic_graficos"
+            android:title="Informes generales"/>
+        <item
+            android:id="@+id/gerReportes"
+            android:icon="@drawable/ic_dolar"
+            android:title="Reportes"/>
+        <item
+            android:id="@+id/gerConfiguracion"
+            android:icon="@drawable/ic_configurar"
+            android:title="Configurar"/>
+        <item
+            android:id="@+id/gerActualizar"
+            android:icon="@drawable/ic_actualizar"
+            android:title="Actualizar versión"/>
+        <item
+            android:id="@+id/gerClave"
+            android:icon="@drawable/ic_clave"
+            android:title="Ingresar clave"/>
+        <item
+            android:id="@+id/gerSincronizar"
+            android:icon="@drawable/ic_sincronizar"
+            android:title="Sincornizar"/>
+    </group>
+
+</menu>

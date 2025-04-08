@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,TextFields,RtlSymmetry,ContentDescription,Autofill,RtlHardcoded,UselessParent,LabelFor"  >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/fondoOscuro">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@color/fondoFooter">
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:maxLines="1"
+                android:text="Desde"
+                android:layout_gravity="end|center_vertical"
+                style="@style/textoCuadriculaOscura"/>
+
+            <EditText
+                android:id="@+id/fec_desde"
+                style="@style/FormatoTextEditListaAutorizados"
+                android:layout_weight="1"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical|right"
+                android:selectAllOnFocus="true"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:maxLines="1"
+                android:text="Hasta"
+                android:layout_gravity="end|center_vertical"
+                style="@style/textoCuadriculaOscura" />
+
+            <EditText
+                android:id="@+id/fec_hasta"
+                style="@style/FormatoTextEditListaAutorizados"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical|right"
+                android:selectAllOnFocus="true"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <RadioGroup
+                android:id="@+id/selec_pedidos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:text="Pendientes" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:text="Enviados" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:text="Todos" />
+            </RadioGroup>
+            <ImageButton
+                android:id="@+id/bt_busca_cliente"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="buscaClientes"
+                android:src="@drawable/ic_buscar"
+                android:background="#55FFFFFF"
+
+                />
+            <EditText
+                android:id="@+id/accionVisita"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:inputType="none"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+
+        <HorizontalScrollView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="2dip"
+            android:layout_weight="1"
+            android:clipToPadding="true"
+            android:orientation="vertical"
+            android:overScrollMode="never" >
+
+            <TableLayout
+                android:id="@+id/amortization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#008000" >
+
+                    <TextView
+                        android:layout_width="80sp"
+                        android:ellipsize="end"
+                        android:gravity="left|center_vertical"
+                        android:maxLines="1"
+                        android:scrollbars="horizontal"
+                        style="@style/cabeceraSubTabla"/>
+
+                    <TextView
+                        android:id="@+id/tpe4"
+                        android:layout_width="90sp"
+                        android:text="Cliente"
+                        android:ellipsize="end"
+                        android:gravity="left|center_vertical"
+                        android:maxLines="1"
+                        android:scrollbars="horizontal"
+                        style="@style/cabeceraSubTabla" />
+
+                    <TextView
+                        android:id="@+id/tpe5"
+                        android:layout_width="160sp"
+                        android:text="Desc-Cliente"
+                        android:ellipsize="end"
+                        android:gravity="left|center_vertical"
+                        android:maxLines="1"
+                        android:scrollbars="horizontal"
+                        style="@style/cabeceraSubTabla" />
+
+                    <TextView
+                        android:id="@+id/tpe2"
+                        android:layout_width="235sp"
+                        android:text="Vendedor"
+                        android:ellipsize="end"
+                        android:gravity="left|center_vertical"
+                        android:maxLines="1"
+                        android:scrollbars="horizontal"
+                        style="@style/cabeceraSubTabla" />
+
+                    <TextView
+                        android:id="@+id/tpe3"
+                        android:layout_width="80sp"
+                        android:text="Fecha"
+                        android:ellipsize="end"
+                        android:gravity="left|center_vertical"
+                        android:maxLines="1"
+                        android:scrollbars="horizontal"
+                        style="@style/cabeceraSubTabla" />
+
+                    <TextView
+                        android:id="@+id/tpe8"
+                        android:layout_width="70sp"
+                        android:text="Estado"
+                        android:ellipsize="end"
+                        android:gravity="left|center_vertical"
+                        android:maxLines="1"
+                        android:scrollbars="horizontal"
+                        style="@style/cabeceraSubTabla" />
+                </TableRow>
+
+                <ListView
+                    android:id="@+id/lvdpedidos"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:paddingTop="1dip"
+                    android:scrollbars="none" />
+            </TableLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:background="@android:drawable/bottom_bar"
+            android:orientation="horizontal"
+            android:paddingLeft="0dp">
+
+            <Button
+                android:id="@+id/Button02"
+                style="@style/button_text"
+                android:layout_width="fill_parent"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:background="@color/verdeOscuro"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="modificaEvaluacion"
+                android:text="Modificar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/Button03"
+                style="@style/button_text"
+                android:layout_width="fill_parent"
+                android:layout_height="41dp"
+                android:layout_marginLeft="-50sp"
+                android:layout_weight="1"
+                android:background="@color/azulMarino"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="consultaEvaluacion"
+                android:text="Consultar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btVendedores"
+                style="@style/button_text"
+                android:layout_width="fill_parent"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:background="@color/fondoFooter"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="cancelaEvaluacion"
+                android:text="Eliminar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

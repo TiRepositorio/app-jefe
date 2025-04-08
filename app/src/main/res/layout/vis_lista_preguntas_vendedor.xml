@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,ContentDescription,Autofill,RtlHardcoded,UselessParent" >
+
+    <TextView
+        android:id="@+id/td1"
+        android:layout_width="220sp"
+        android:gravity="left|center_vertical"
+        android:text="t1"
+        style="@style/textoTabla"/>
+
+    <RadioGroup
+        android:id="@+id/rgRespuesta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbSi"
+            android:layout_width="50sp"
+            android:enabled="false"
+            android:text=""
+            style="@style/textoTabla" />
+
+        <RadioButton
+            android:id="@+id/rbNo"
+            android:layout_width="50sp"
+            android:enabled="false"
+            android:text=""
+            style="@style/textoTabla" />
+
+        <RadioButton
+            android:id="@+id/rbB"
+            android:layout_width="0sp"
+            android:enabled="false"
+            android:text=""
+            style="@style/textoTabla"
+            android:visibility="invisible" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spPuntuacion"
+        style="@style/spinner_style"
+        android:layout_width="60sp"
+        android:layout_height="38dp"
+        android:spinnerMode="dropdown"
+        android:textSize="8pt" />
+
+</LinearLayout>

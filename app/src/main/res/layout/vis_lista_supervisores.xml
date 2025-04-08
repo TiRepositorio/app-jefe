@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,ContentDescription,Autofill,RtlHardcoded,UselessParent" >
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1"
+        >
+
+        <TableLayout
+            android:id="@+id/detalle_pedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#008000" >
+
+                <TextView
+                    android:id="@+id/dopo"
+                    android:layout_width="5sp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:maxLines="1"
+                    android:scrollbars="horizontal"
+                    style="@style/cabeceraSubTabla"/>
+
+                <TextView
+                    android:id="@+id/d2"
+                    android:layout_width="80sp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:scrollbars="horizontal"
+                    android:text="Codigo"
+                    style="@style/cabeceraSubTabla"/>
+
+                <TextView
+                    android:id="@+id/d3"
+                    android:layout_width="0dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:scrollbars="horizontal"
+                    android:text="Descripcion"
+                    android:layout_weight="1"
+                    style="@style/cabeceraSubTabla"/>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvdet_supervisores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:paddingTop="1dip"
+                android:scrollbars="none" />
+
+
+
+
+        </TableLayout>
+
+    </HorizontalScrollView>
+
+
+    <Button
+        android:id="@+id/btn_Seleccionar"
+        android:layout_gravity="bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:text="Seleccionar"/>
+
+
+</LinearLayout>

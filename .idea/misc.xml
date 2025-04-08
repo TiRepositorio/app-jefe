@@ -1,0 +1,85 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/Jefes/Jefes/app/src/main/res/layout/visitas_vp_clientes_visitados.xml" value="0.1762917933130699" />
+        <entry key="..\:/Android/Jefes/Jefes/app/src/main/res/layout/visitas_vp_visita_clientes.xml" value="0.75" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout-v21/rep_canasta_de_marcas.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/barra_ger_sup.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/barra_vendedores.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/busqueda.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/busqueda4.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/busqueda4_lista.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/busqueda_lista.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/configurar_vp_acerca_de.xml" value="0.15052083333333333" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/configurar_vp_configurar_usuario.xml" value="0.264" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/inf_evo_dia_lista_evolucion.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/inf_lista_detalle_asistencia_sup.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/inf_met_pun_lista_metas_puntuaciones_por_linea.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/inf_met_pun_lista_metas_puntuaciones_por_linea_emp.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/inf_met_pun_lista_metas_puntuaciones_por_linea_sup.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/inf_mov_ges_lista_movimiento.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/inf_ped_ven_lista_pedidos_por_vendedor_articulos.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/inf_prod_sem_lista_produccion_semanal_detalle2.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/inf_reb_vend_lista_rebotes.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/inf_seg_vis_lista_periodo.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/inf_seg_vis_lista_periodos.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/inf_seg_vis_lista_vendedores.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_avance_de_comisiones.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_avance_de_comisiones2.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_detalle_de_asistencia_supervisores.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_deuda.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_deuda_de_clientes.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_evolucion_diaria_de_ventas.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_lista_de_precios.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_metas_puntuaciones_por_linea_empresa.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_metas_puntuaciones_por_linea_supervisores.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_metas_puntuaciones_por_linea_vendedores.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_movimiento_de_gestores.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_pedidos_por_vendedor.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_pedidos_por_vendedor2.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_produccion_semanal.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_produccion_semanal2.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_rebotes_por_vendedor.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/informes_vp_seguimiento_de_visitas.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/lista_uno.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/mapa_cliente.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/menu_generico.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/menu_lista.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/menu_principal.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/rep_canasta_de_marcas.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/rep_com_pen_lista_comprobantes.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/reportes_vp_canasta_de_clientes.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/reportes_vp_canasta_de_marcas.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/reportes_vp_comprobantes_pendientes.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/reportes_vp_variables_mensuales.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/sup_canasta_de_clientes.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/supervisor_vp_produccion_semanal.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/supervisor_vp_produccion_semanal2.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/supervisor_vp_variables_mensuales.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/vis_lista_clientes_vendedores.xml" value="0.176" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/vis_lista_clientes_visitados.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/vis_lista_consulta_evaluacion_cliente.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/vis_lista_marcacion_oficina_enviar.xml" value="0.2" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/vis_lista_marcar_reunion_enviar.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/vis_lista_preguntas2.xml" value="0.15052083333333333" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/vis_lista_supervisores.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/vis_lista_vendedores_supervisor2.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/vis_lista_vendedores_supervisores.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/visitas_vp_clientes_visitados.xml" value="0.1265625" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/visitas_vp_reporte_general_gestor.xml" value="0.2" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/visitas_vp_visita_clientes.xml" value="0.153125" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/vp_evolucion_diaria_de_ventas.xml" value="0.11927083333333334" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/vp_sincronizacion.xml" value="0.11927083333333334" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/vp_sub_informe1.xml" value="0.11927083333333334" />
+        <entry key="..\:/Android/Proyecto/JefesKT/ApoloJefesKt/app/src/main/res/layout/vp_ventana_principal.xml" value="0.11927083333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

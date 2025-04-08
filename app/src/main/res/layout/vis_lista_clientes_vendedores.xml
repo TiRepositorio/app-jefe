@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,ContentDescription,Autofill,RtlHardcoded">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tvSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_weight="1"
+                android:background="#fffafa"
+                android:textColor="#000000"
+                tools:ignore="LabelFor"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnFiltrar"
+                android:layout_width="40sp"
+                android:layout_height="28sp"
+                android:background="#CCC"
+                android:text=">>" />
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginTop="2dip"
+            android:layout_weight="0.08"
+            android:clipToPadding="true"
+            android:overScrollMode="never" >
+
+
+            <TableLayout
+                android:id="@+id/detalle_pedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#008000" >
+
+
+                    <TextView
+                        android:id="@+id/d2"
+                        android:ellipsize="end"
+                        android:gravity="left|center_vertical"
+                        android:maxLines="1"
+                        android:scrollbars="horizontal"
+                        android:text="Cliente"
+                        android:width="310sp"
+                        style="@style/cabeceraSubTabla"/>
+
+
+                </TableRow>
+
+                <ListView
+                    android:id="@+id/lvdet_clientes"
+                    android:layout_width="30sp"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:paddingTop="1dip"
+                    android:scrollbars="none" />
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/btn_Seleccionar"
+            android:layout_width="fill_parent"
+            android:layout_height="50sp"
+            android:layout_gravity="bottom"
+            android:text="Seleccionar" />
+    </LinearLayout>
+
+</RelativeLayout>

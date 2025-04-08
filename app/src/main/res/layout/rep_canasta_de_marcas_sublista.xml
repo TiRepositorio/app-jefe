@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,ContentDescription">
+
+        <LinearLayout
+            android:id="@+id/llSublista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    style="@style/textoTabla"
+                    tools:ignore="ContentDescription"
+                    />
+
+                <TextView
+                    android:id="@+id/tvs1"
+                    android:layout_width="40dp"
+                    android:text="20"
+                    android:gravity="end"
+                    style="@style/textoTabla"
+                    />
+
+                <TextView
+                    android:id="@+id/tvs2"
+                    android:layout_width="250dp"
+                    android:text="1500"
+                    android:gravity="start"
+                    style="@style/textoTabla"
+                    />
+
+                <TextView
+                    android:id="@+id/tvs3"
+                    android:layout_width="130dp"
+                    android:text="75%"
+                    android:gravity="end"
+                    style="@style/textoTabla"
+                    />
+
+                <TextView
+                    android:id="@+id/tvs4"
+                    android:layout_width="120dp"
+                    android:text="70%"
+                    android:gravity="end"
+                    style="@style/textoTabla"
+                    />
+
+                <TextView
+                    android:id="@+id/tvs5"
+                    android:layout_width="120dp"
+                    android:text="500.000"
+                    android:gravity="end"
+                    style="@style/textoTabla"
+                    />
+
+                <TextView
+                    android:id="@+id/tvs6"
+                    android:layout_width="120dp"
+                    android:text="500.000"
+                    android:gravity="end"
+                    style="@style/textoTabla"
+                    />
+
+                <TextView
+                    android:id="@+id/tvs7"
+                    android:layout_width="120dp"
+                    android:text="500.000"
+                    android:gravity="end"
+                    style="@style/textoTabla"
+                    />
+        </LinearLayout>
+
+</LinearLayout>

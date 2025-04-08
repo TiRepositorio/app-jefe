@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,ContentDescription,Autofill,RtlHardcoded,UselessParent"  >
+
+    <TextView
+        android:layout_width="5sp"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:maxLines="1"
+        android:scrollbars="horizontal"
+        android:text=" "
+        style="@style/textoSubTabla"/>
+
+    <TextView
+        android:id="@+id/td1"
+        android:layout_width="60sp"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:maxLines="1"
+        android:scrollbars="horizontal"
+        android:text=" "
+        style="@style/textoSubTabla" />
+
+    <TextView
+        android:id="@+id/td2"
+        android:layout_width="240sp"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:maxLines="1"
+        android:scrollbars="horizontal"
+        android:text=" "
+        style="@style/textoSubTabla" />
+
+</LinearLayout>

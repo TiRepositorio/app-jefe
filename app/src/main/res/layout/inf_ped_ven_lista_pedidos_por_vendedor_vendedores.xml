@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="80dp"
+        android:gravity="end|center_vertical"
+        style="@style/textoSubTabla"
+        />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="200dp"
+        android:text="Vendedor (Código/Descripción)"
+        android:gravity="start|center_vertical"
+        style="@style/textoSubTabla"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="70dp"
+        android:text="Ruteo"
+        android:gravity="end|center_vertical"
+        style="@style/textoSubTabla"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="80dp"
+        android:text="Positivado"
+        android:gravity="end|center_vertical"
+        style="@style/textoSubTabla"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="80dp"
+        android:text="Fuera Ruta"
+        android:gravity="end|center_vertical"
+        style="@style/textoSubTabla"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="120dp"
+        android:text="Total Pedido"
+        android:gravity="end|center_vertical"
+        style="@style/textoSubTabla"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

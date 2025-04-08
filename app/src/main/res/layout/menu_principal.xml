@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/header_visitas_id"
+    android:layout_height="196dp"
+    android:paddingTop="50dp"
+    android:paddingStart="25dp"
+    android:gravity="start"
+    android:background="@drawable/fondo_cabecera"
+    android:paddingLeft="25dp"
+    tools:ignore="RtlSymmetry">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgIcono"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_persona"
+        android:background="@color/verdeApolo"
+
+        />
+
+    <TextView
+        android:id="@+id/tvTituloMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jefe de ventas"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText"
+        />
+
+    <TextView
+        android:id="@+id/tvNombreVend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/tvCodigoVend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        />
+
+
+</LinearLayout>

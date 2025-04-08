@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,ContentDescription,Autofill,RtlHardcoded">
+
+    <Button
+        android:layout_width="80sp"
+        android:id="@+id/btnEnviar"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:text="Enviar"/>
+
+    <TextView
+        android:id="@+id/td1"
+        android:layout_width="90sp"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:text="t1"
+        
+        style="@style/textoTabla"/>
+
+    <TextView
+        android:id="@+id/td2"
+        android:layout_width="160sp"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:text="t1"
+        
+        style="@style/textoTabla"  />
+
+    <TextView
+        android:id="@+id/td3"
+        android:layout_width="55sp"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:text="t1"
+        
+        style="@style/textoTabla"  />
+
+
+    <TextView
+        android:id="@+id/td4"
+        android:layout_width="180sp"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:text="t1"
+        
+        style="@style/textoTabla" />
+
+    <TextView
+        android:id="@+id/td5"
+        android:layout_width="80sp"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:text="t1"
+        
+        style="@style/textoTabla" />
+
+    <TextView
+        android:id="@+id/td6"
+        android:layout_width="70sp"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:text="t1"
+        
+        style="@style/textoTabla" />
+
+
+
+</LinearLayout>

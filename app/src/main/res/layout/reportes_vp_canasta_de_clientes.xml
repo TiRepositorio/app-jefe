@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".supervisores.CanastaDeClientes"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#ddd">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/barra_vendedores"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights,UselessParent">
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/verdeApolo">
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:text="Cod."
+                            android:gravity="center"
+                            style="@style/cabeceraTabla"/>
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:text="Clientes (Descripción)"
+                            android:gravity="start"
+                            style="@style/cabeceraTabla"/>
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:text="Valor de la Canasta"
+                            android:gravity="end"
+                            style="@style/cabeceraTabla"/>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:text="Ventas"
+                            android:gravity="end"
+                            style="@style/cabeceraTabla"/>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:text="Metas"
+                            android:gravity="end"
+                            style="@style/cabeceraTabla"/>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:text="Porc. Cump."
+                            android:gravity="end"
+                            style="@style/cabeceraTabla"/>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:text="Tot. Percibir"
+                            android:gravity="end"
+                            style="@style/cabeceraTabla"/>
+
+                    </TableRow>
+
+                    <ListView
+                        android:id="@+id/lvCanastaDeClientes"
+                        android:layout_height="match_parent"
+                        android:layout_weight="@android:integer/config_longAnimTime" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/verdeApolo">
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:gravity="center"
+                            style="@style/cabeceraTabla"/>
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:text="Total"
+                            android:gravity="start"
+                            style="@style/cabeceraTabla"/>
+
+                        <TextView
+                            android:id="@+id/tvCanCliTotalValorDeLaCanasta"
+                            android:layout_width="130dp"
+                            android:text="0"
+                            android:gravity="end"
+                            style="@style/cabeceraTabla"/>
+
+                        <TextView
+                            android:id="@+id/tvCanCliTotalVentas"
+                            android:layout_width="120dp"
+                            android:text="0"
+                            android:gravity="end"
+                            style="@style/cabeceraTabla"/>
+
+                        <TextView
+                            android:id="@+id/tvCanCliTotalMetas"
+                            android:layout_width="120dp"
+                            android:text="0"
+                            android:gravity="end"
+                            style="@style/cabeceraTabla"/>
+
+                        <TextView
+                            android:id="@+id/tvCanCliTotalPorcCump"
+                            android:layout_width="120dp"
+                            android:text="0"
+                            android:gravity="end"
+                            style="@style/cabeceraTabla"/>
+
+                        <TextView
+                            android:id="@+id/tvCanCliTotalTotalPercibir"
+                            android:layout_width="120dp"
+                            android:text="0"
+                            android:gravity="end"
+                            style="@style/cabeceraTabla"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

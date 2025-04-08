@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    android:background="@color/fondoOscuro">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="10sp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="35sp"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/tvDescJefe"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text=""
+            tools:ignore="InefficientWeight" />
+
+        <Button
+            android:id="@+id/btn_volver"
+            android:layout_width="40sp"
+            android:layout_height="30sp"
+            android:background="@color/fondoFooter"
+            android:text="X"
+            android:textColor="@color/textoClaro"
+            tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="1dip"
+        android:layout_marginTop="2dip"
+        android:layout_weight="0.08"
+        android:clipToPadding="true"
+        android:overScrollMode="never"
+        tools:ignore="InefficientWeight"
+        android:layout_marginStart="4dip"
+        android:layout_marginEnd="1dip">
+
+
+
+        <TableLayout
+            android:id="@+id/detalle_pedido"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            tools:ignore="ScrollViewSize">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:width="5sp" />
+
+                <TextView
+                    android:id="@+id/tvGestor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="DETALLE ASISTENCIA SUPERVISORES"
+                    android:textStyle="bold|italic"
+                    android:width="310sp"
+                    style="@style/textoCuadriculaOscura"
+                    android:background="@color/fondoOscuro"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/dopo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:maxLines="1"
+                    android:scrollbars="horizontal"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:width="470sp"
+                    style="@style/textoCuadriculaOscura"
+                    android:background="@color/fondoOscuro"/>
+
+
+                <TextView
+                    android:id="@+id/tvMes4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:paddingRight="5sp"
+                    android:ellipsize="end"
+                    android:background="@color/verdeApoloCabecera"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:maxLines="1"
+                    android:scrollbars="horizontal"
+                    android:text="Total Horas"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:width="180sp"
+                    android:paddingEnd="5sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#008000" >
+
+                <TextView
+                    android:layout_width="5sp"
+                    style="@style/cabeceraSubTabla"/>
+
+
+                <TextView
+                    android:id="@+id/d2"
+                    android:layout_width="300sp"
+                    android:gravity="left|center_vertical"
+                    android:text="Vendedor(Descripción, Nombre)"
+                    style="@style/cabeceraSubTabla"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/d3"
+                    android:layout_width="260sp"
+                    android:text="Cliente(Cod. Sub. Nombre)"
+                    style="@style/cabeceraSubTabla"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/d4"
+                    android:layout_width="80sp"
+                    android:text="T. Max"
+                    style="@style/cabeceraSubTabla"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/d5"
+                    android:layout_width="60sp"
+                    android:text="Entrada"
+                    style="@style/cabeceraSubTabla"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/d6"
+                    android:layout_width="80sp"
+                    android:gravity="center|center_vertical"
+                    android:text="Salida"
+                    style="@style/cabeceraSubTabla"
+                    tools:ignore="HardcodedText" />
+
+
+                <TextView
+                    android:id="@+id/d7"
+                    android:layout_width="90sp"
+                    android:text="Horas Trab."
+                    style="@style/cabeceraSubTabla"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/d8"
+                    android:layout_width="90sp"
+                    android:text="Horas Cons."
+                    style="@style/cabeceraSubTabla"
+                    tools:ignore="HardcodedText" />
+
+            </TableRow>
+
+            <ListView
+                android:id="@+id/lvdet_metas_puntuaciones"
+                android:layout_width="30sp"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:paddingTop="1dip"
+                android:scrollbars="none" />
+
+
+        </TableLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

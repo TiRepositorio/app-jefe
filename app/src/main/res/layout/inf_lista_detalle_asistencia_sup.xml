@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+
+    <TextView
+        android:id="@+id/td1"
+        android:layout_width="45sp"
+        android:gravity="start|center_vertical"
+        style="@style/textoTabla"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/td2"
+        android:layout_width="250sp"
+        android:gravity="start|center_vertical"
+        style="@style/textoTabla"/>
+
+    <TextView
+        android:id="@+id/td3"
+        android:layout_width="80sp"
+        android:gravity="start|center_vertical"
+        style="@style/textoTabla" />
+
+    <TextView
+        android:id="@+id/td4"
+        android:layout_width="200sp"
+        android:gravity="start|center_vertical"
+        style="@style/textoTabla" />
+
+    <TextView
+        android:id="@+id/td5"
+        android:layout_width="40dp"
+        android:gravity="end|center_vertical"
+        style="@style/textoTabla" />
+
+
+    <TextView
+        android:id="@+id/td6"
+        android:layout_width="80sp"
+        android:gravity="end|center_vertical"
+        style="@style/textoTabla" />
+
+    <TextView
+        android:id="@+id/td7"
+        android:layout_width="80sp"
+        android:gravity="end|center_vertical"
+        style="@style/textoTabla"/>
+
+    <TextView
+        android:id="@+id/td8"
+        android:layout_width="40sp"
+        android:gravity="end|center_vertical"
+        style="@style/textoTabla" />
+
+    <TextView
+        android:id="@+id/td9"
+        android:layout_width="40dp"
+        android:gravity="end|center_vertical"
+        style="@style/textoTabla" />
+
+    <TextView
+        android:id="@+id/td10"
+        android:layout_width="40sp"
+        android:gravity="end|center_vertical"
+        style="@style/textoTabla" />
+
+    <TextView
+        android:id="@+id/td11"
+        android:layout_width="40sp"
+        android:gravity="end|center_vertical"
+        style="@style/textoTabla" />
+
+
+
+</LinearLayout>

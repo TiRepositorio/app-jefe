@@ -1,0 +1,213 @@
+{
+  "project_info": {
+    "project_number": "694050517355",
+    "project_id": "wms-kotlin",
+    "storage_bucket": "wms-kotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694050517355:android:72e166c677f655b7b61c2e",
+        "android_client_info": {
+          "package_name": "apolo.cobradores.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694050517355-at8ndomvdpus60k600cn6aji0r58jpcv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB50xwzlcYkQCrrR0NPFodcv3lN4qabIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694050517355-at8ndomvdpus60k600cn6aji0r58jpcv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694050517355:android:38937b236ad759ebb61c2e",
+        "android_client_info": {
+          "package_name": "apolo.com.prontaentregaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694050517355-at8ndomvdpus60k600cn6aji0r58jpcv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB50xwzlcYkQCrrR0NPFodcv3lN4qabIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694050517355-at8ndomvdpus60k600cn6aji0r58jpcv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694050517355:android:8227b0698cb4208eb61c2e",
+        "android_client_info": {
+          "package_name": "apolo.com.repartidores"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694050517355-at8ndomvdpus60k600cn6aji0r58jpcv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB50xwzlcYkQCrrR0NPFodcv3lN4qabIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694050517355-at8ndomvdpus60k600cn6aji0r58jpcv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694050517355:android:8a8e32e049173844b61c2e",
+        "android_client_info": {
+          "package_name": "apolo.jefes.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694050517355-at8ndomvdpus60k600cn6aji0r58jpcv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB50xwzlcYkQCrrR0NPFodcv3lN4qabIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694050517355-at8ndomvdpus60k600cn6aji0r58jpcv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694050517355:android:907a519ce934afeeb61c2e",
+        "android_client_info": {
+          "package_name": "apolo.supervisor.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694050517355-at8ndomvdpus60k600cn6aji0r58jpcv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB50xwzlcYkQCrrR0NPFodcv3lN4qabIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694050517355-at8ndomvdpus60k600cn6aji0r58jpcv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694050517355:android:b9ec961bc0abb08fb61c2e",
+        "android_client_info": {
+          "package_name": "apolo.vendedores.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694050517355-at8ndomvdpus60k600cn6aji0r58jpcv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB50xwzlcYkQCrrR0NPFodcv3lN4qabIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694050517355-at8ndomvdpus60k600cn6aji0r58jpcv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694050517355:android:b74f3ecd33119ba2b61c2e",
+        "android_client_info": {
+          "package_name": "com.apolo.wms2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694050517355-at8ndomvdpus60k600cn6aji0r58jpcv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB50xwzlcYkQCrrR0NPFodcv3lN4qabIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694050517355-at8ndomvdpus60k600cn6aji0r58jpcv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

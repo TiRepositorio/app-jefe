@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvd1"
+            android:layout_width="50dp"
+            android:text="Lista"
+            android:gravity="end|center_vertical"
+            style="@style/textoSubTabla"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tvd2"
+            android:layout_width="match_parent"
+            android:text="Articulo"
+            android:gravity="start|center_vertical"
+            android:layout_weight="1"
+            style="@style/textoSubTabla"
+            tools:ignore="HardcodedText,InefficientWeight" />
+
+        <TextView
+            android:id="@+id/tvd3"
+            android:layout_width="120dp"
+            android:text="Siglas"
+            android:gravity="end|center_vertical"
+            style="@style/textoSubTabla"
+            tools:ignore="HardcodedText" />
+
+</LinearLayout>

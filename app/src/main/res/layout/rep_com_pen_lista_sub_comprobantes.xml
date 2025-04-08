@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,ContentDescription">
+
+        <TextView
+            android:id="@+id/tvComSubFecComprobante"
+            android:layout_width="130dp"
+            android:text="20"
+            style="@style/textoSubTabla"
+            />
+
+        <TextView
+            android:id="@+id/tvComSubObservacion"
+            android:layout_width="150dp"
+            android:text="1500"
+            android:gravity="start"
+            style="@style/textoSubTabla"
+            />
+
+        <TextView
+            android:id="@+id/tvComSubDescripcion"
+            android:layout_width="130dp"
+            android:text="75%"
+            android:gravity="start"
+            android:textSize="10sp"
+            style="@style/textoSubTabla"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tvComSubExenta"
+            android:layout_width="110dp"
+            android:text="70%"
+            android:gravity="end"
+            style="@style/textoSubTabla"
+            />
+
+        <TextView
+            android:id="@+id/tvComSubGravada"
+            android:layout_width="110dp"
+            android:text="500.000"
+            android:gravity="end"
+            style="@style/textoSubTabla"
+            />
+
+        <TextView
+            android:id="@+id/tvComSubIva"
+            android:layout_width="110dp"
+            android:text="500.000"
+            android:gravity="end"
+            style="@style/textoSubTabla"
+            />
+
+        <TextView
+            android:id="@+id/tvComSubTotal"
+            android:layout_width="110dp"
+            android:text="500.000"
+            android:layout_marginRight="10dp"
+            android:gravity="end"
+            style="@style/textoSubTabla"
+            android:layout_marginEnd="10dp" />
+
+</LinearLayout>

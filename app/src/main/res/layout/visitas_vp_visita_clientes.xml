@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,TextFields,ButtonStyle,UseCompoundDrawables,RtlSymmetry,ContentDescription,Autofill,RtlHardcoded,UselessParent,LabelFor"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/fondoOscuro">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/imgTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_check"
+                android:background="#ddd"/>
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="REPORTE DE VISITA CON EL GESTOR"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:background="#ddd"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:clipToPadding="true"
+            android:overScrollMode="never" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_textview" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvDescSupervisor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+
+                        android:text="SUPERVISOR: "
+                        android:gravity="start|center_vertical"
+                        style="@style/textoCuadriculaOscura" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvNomVendedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:layout_weight="1"
+                        android:text="GV/PV: "
+                        android:gravity="start|center_vertical"
+                        style="@style/textoCuadriculaOscura" />
+
+                    <TextView
+                        android:id="@+id/tvDescVendedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="ZONA: "
+                        style="@style/textoCuadriculaOscura" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CLIENTE:"
+                        style="@style/textoCuadriculaOscura" />
+
+                    <TextView
+                        android:id="@+id/tvCliente"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        style="@style/textoCuadriculaOscura" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvDiaVisita"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:layout_weight="1"
+                        android:text="DIA DE VISITA: "
+                        android:gravity="start|center_vertical"
+                        style="@style/textoCuadriculaOscura" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvHoraLlegada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="HORA DE LLEGADA: "
+                        android:gravity="start|center_vertical"
+                        android:layout_weight="1"
+                        style="@style/textoCuadriculaOscura" />
+
+                    <TextView
+                        android:id="@+id/tvHoraSalida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="HORA DE SALIDA: "
+                        android:gravity="start|center_vertical"
+                        android:layout_weight="1"
+                        style="@style/textoCuadriculaOscura" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMarcacion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/cbEntrada"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="Entrada"
+                        android:background="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/cbSalida"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="Salida"
+                        android:background="#FFFFFF"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+
+                    <Button
+                        android:id="@+id/btnMarcarReunion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="M. Reunion" />
+
+                    <Button
+                        android:id="@+id/btnMarcarOficina"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="M. Oficina" />
+                </LinearLayout>
+            </TableLayout>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginTop="2dip"
+            android:layout_weight="1"
+            android:clipToPadding="true"
+            android:overScrollMode="never" >
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="ANALISIS DE LA ZONA"
+                    style="@style/footerTabla"/>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/d2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="left|center_vertical"
+                        android:scrollbars="horizontal"
+                        android:text="Analisis"
+                        android:width="220sp"
+                        style="@style/cabeceraSubTabla"/>
+
+                    <TextView
+                        android:id="@+id/d3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="SI"
+                        android:textSize="12sp"
+                        android:width="50sp"
+                        style="@style/cabeceraSubTabla"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="NO"
+                        android:textSize="12sp"
+                        android:width="50sp"
+                        style="@style/cabeceraSubTabla"
+                        />
+
+                    <TextView
+                        android:id="@+id/d4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="Punt."
+                        android:textSize="12sp"
+                        android:width="60sp"
+                        style="@style/cabeceraSubTabla" />
+                </TableRow>
+
+                <ListView
+                    android:id="@+id/lvDetAnalisisZona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:scrollbars="none" />
+            </TableLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/bottom_bar"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnEnviar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="#fffafa"
+                android:background="@color/verdeOscuro"
+                android:text="Enviar"
+                style="?android:attr/buttonBarButtonStyle" />
+
+
+            <Button
+                android:onClick="limpiar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="#fffafa"
+                android:background="@color/fondoFooter"
+                android:text="Limpiar"
+                style="?android:attr/buttonBarButtonStyle" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

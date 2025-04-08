@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".informes.PedidosPorVendedor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/barra_vendedores"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvVendedores"
+            android:text="Vendedores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tial"
+            android:layout_weight="1"
+            android:onClick="mostrarContenido"
+            style="@style/tabContenidos"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/tvClientes"
+            android:text="Lista Clientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grisTab"
+            android:layout_weight="1"
+            android:onClick="mostrarContenido"
+            style="@style/tabContenidos"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/tvListaDePrecios"
+            android:text="Lista Articulos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grisTab"
+            android:layout_weight="1"
+            android:onClick="mostrarContenido"
+            style="@style/tabContenidos"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#757575">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llVendedor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="ScrollViewSize">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="80dp"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        />
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="200dp"
+                        android:text="Vendedor (Código/Descripción)"
+                        android:gravity="start|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="70dp"
+                        android:text="Ruteo"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="80dp"
+                        android:text="Positivado"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/tv5"
+                        android:layout_width="80dp"
+                        android:text="Fuera Ruta"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/tv6"
+                        android:layout_width="120dp"
+                        android:text="Total Pedido"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <ListView
+                    android:id="@+id/lvVendedores"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:ignore="InefficientWeight" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="80dp"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        />
+                    <TextView
+                        android:layout_width="200dp"
+                        android:text="Total"
+                        android:gravity="start|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/tvTotalRuteo"
+                        android:layout_width="70dp"
+                        android:text="0"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/tvTotalPositivado"
+                        android:layout_width="80dp"
+                        android:text="0"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/tvTotalFueraRuta"
+                        android:layout_width="80dp"
+                        android:text="0"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/tvTotalPedido"
+                        android:layout_width="120dp"
+                        android:text="0"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llClientes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvc1"
+                        android:layout_width="100dp"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        />
+                    <TextView
+                        android:id="@+id/tvc2"
+                        android:layout_width="200dp"
+                        android:text="Cliente (Código/Descripción)"
+                        android:gravity="start|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/tvc3"
+                        android:layout_width="120dp"
+                        android:text="Descuento"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/tvc4"
+                        android:layout_width="120dp"
+                        android:text="Monto total"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <ListView
+                    android:id="@+id/lvClientes"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VENDEDOR"
+                style="@style/footerTabla"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/footerTabla">
+            <TextView
+                android:layout_width="40dp"
+                android:gravity="end"
+                android:text="Cod:"
+                style="@style/tvTitulo"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/tvdCodVendedor"
+                style="@style/tvDetalle"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:hint="cantidad"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:text="0"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:gravity="end"
+                android:text="Desc:"
+                style="@style/tvTitulo"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvdDescVendedor"
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="Desc:"
+                android:layout_weight="1"
+                style="@style/tvDetalle"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llListaDePrecios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvl1"
+                        android:layout_width="80dp"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        />
+                    <TextView
+                        android:id="@+id/tvl2"
+                        android:layout_width="200dp"
+                        android:text="Articulo (Código/Descripción)"
+                        android:gravity="start|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/tvl3"
+                        android:layout_width="80dp"
+                        android:text="Cantidad"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/tvl4"
+                        android:layout_width="120dp"
+                        android:text="Precio Unitario"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/tvl5"
+                        android:layout_width="120dp"
+                        android:text="Descuento"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/tvl6"
+                        android:layout_width="120dp"
+                        android:text="Monto Total"
+                        android:gravity="end|center_vertical"
+                        style="@style/cabeceraSubTabla"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <ListView
+                    android:id="@+id/lvListaDePrecios"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VENDEDOR"
+                style="@style/footerTabla"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/footerTabla">
+            <TextView
+                android:layout_width="40dp"
+                android:gravity="end"
+                android:text="Cod:"
+                style="@style/tvTitulo"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/tvdCodVendedor2"
+                style="@style/tvDetalle"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:hint="cantidad"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:text="0"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:gravity="end"
+                android:text="Desc:"
+                style="@style/tvTitulo"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvdDescVendedor2"
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="Desc:"
+                android:layout_weight="1"
+                style="@style/tvDetalle"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/footerTabla">
+            <TextView
+                android:layout_width="40dp"
+                android:gravity="end"
+                android:text="Cod:"
+                style="@style/tvTitulo"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/tvdCodVendedor4"
+                style="@style/tvDetalle"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:hint="cantidad"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:text="0"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:gravity="end"
+                android:text="Desc:"
+                style="@style/tvTitulo"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvdDescVendedor4"
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="Desc:"
+                android:layout_weight="1"
+                style="@style/tvDetalle"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

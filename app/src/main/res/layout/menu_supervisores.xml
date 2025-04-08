@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/header_visitas_id"
+    android:layout_height="196dp"
+    android:paddingTop="50dp"
+    android:paddingLeft="25dp"
+    android:paddingStart="25dp"
+    android:gravity="start"
+    android:background="@drawable/fondo_cabecera"
+    tools:ignore="RtlSymmetry,HardcodedText">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgIcono"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_persona"
+        android:background="@color/verdeApolo"
+
+        />
+
+    <TextView
+        android:id="@+id/tvTituloMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supervisores"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tvNombreSup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Vendedor"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/tvCodigoSup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="511-Tradicional Apolo"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        />
+
+
+</LinearLayout>
