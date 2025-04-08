@@ -15,6 +15,9 @@ import kotlinx.android.synthetic.main.vp_main.*
 
 class MainActivity : AppCompatActivity() {
 
+
+    //APP DE JEFES
+
     companion object{
         var utilidadesBD: UtilidadesBD? = null
         var bd: SQLiteDatabase? = null
